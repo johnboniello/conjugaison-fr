@@ -1,0 +1,15 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+/Screenshot_*.jpg
+/Screenshot_*.png
+
+# Signing — never commit; back up separately
+/keystore/
+keystore.properties
+*.jks
+*.keystore
