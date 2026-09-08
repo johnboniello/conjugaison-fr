@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_verbs" android:title="Choisir les verbes" />
+    <item android:id="@+id/action_rate" android:title="Vitesse de la voix" />
+</menu>

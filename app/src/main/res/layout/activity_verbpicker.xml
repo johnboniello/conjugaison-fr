@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Coche les verbes à travailler. Les 3 jeux tirent au hasard parmi les verbes cochés."
+            android:textColor="#1A1A1A"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/pickAll" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
+                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Tout" />
+            <Button android:id="@+id/pickNone" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
+                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Rien" />
+            <Button android:id="@+id/pickCore" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:backgroundTint="#EDE7F6"
+                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="De base" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/pickG1" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
+                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Groupe 1" />
+            <Button android:id="@+id/pickG2" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
+                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Groupe 2" />
+            <Button android:id="@+id/pickG3" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:backgroundTint="#EDE7F6"
+                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Groupe 3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pickCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textColor="#1A1A1A"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/verbGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2" />
+    </LinearLayout>
+</ScrollView>
