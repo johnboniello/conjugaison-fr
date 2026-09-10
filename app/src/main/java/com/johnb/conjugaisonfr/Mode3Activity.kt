@@ -49,6 +49,7 @@ class Mode3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mode3)
+        padForSystemBars()
         supportActionBar?.title = "Choix multiple"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         ConjugationData.load(this)

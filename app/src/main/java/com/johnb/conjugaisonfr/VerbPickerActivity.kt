@@ -19,6 +19,7 @@ class VerbPickerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verbpicker)
+        padForSystemBars()
         supportActionBar?.title = "Choisir les verbes"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         ConjugationData.load(this)

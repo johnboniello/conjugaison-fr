@@ -71,6 +71,7 @@ abstract class TypedModeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layoutRes)
+        padForSystemBars()
         supportActionBar?.title = titleText
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         ConjugationData.load(this)
