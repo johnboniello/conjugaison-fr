@@ -40,26 +40,19 @@
                 android:id="@+id/promptView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/card"
+                android:background="@drawable/prompt_card"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text=""
                 android:textColor="#1A1A1A"
                 android:textSize="17sp" />
 
-            <LinearLayout
+            <Button
+                android:id="@+id/hintBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/hintBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAllCaps="false"
-                    android:text="💡  Indice" />
-            </LinearLayout>
+                android:text="💡  Indice" />
 
             <TextView
                 android:id="@+id/hintLine"
@@ -94,22 +87,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:baselineAligned="false"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/backspaceBtn"
+                    style="@style/Widget.Conj.Button.Pale"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:textAllCaps="false"
                     android:text="⌫  Une lettre" />
 
                 <Button
                     android:id="@+id/clearBtn"
+                    style="@style/Widget.Conj.Button.Pale"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:textAllCaps="false"
                     android:text="Tout effacer" />
             </LinearLayout>
 
@@ -117,10 +112,9 @@
                 android:id="@+id/checkBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="8dp"
                 android:paddingTop="14dp"
                 android:paddingBottom="14dp"
-                android:textAllCaps="false"
                 android:text="✅  Vérifier"
                 android:textSize="18sp" />
 
@@ -131,7 +125,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/card"
                 android:orientation="vertical"
-                android:padding="14dp"
+                android:padding="16dp"
                 android:visibility="gone">
 
                 <LinearLayout
@@ -191,18 +185,17 @@
                     <Button
                         android:id="@+id/retryBtn"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:textAllCaps="false"
                         android:textSize="13sp"
                         android:text="↺  Réessayer" />
 
                     <Button
                         android:id="@+id/revealBtn"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
                         android:layout_weight="1"
-                        android:textAllCaps="false"
                         android:textSize="13sp"
                         android:visibility="gone"
                         android:text="👁  Réponse" />
@@ -210,9 +203,9 @@
                     <Button
                         android:id="@+id/nextBtn"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
                         android:layout_weight="1"
-                        android:textAllCaps="false"
                         android:textSize="13sp"
                         android:text="➡️  Suivant" />
                 </LinearLayout>

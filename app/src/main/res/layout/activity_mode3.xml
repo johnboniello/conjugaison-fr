@@ -40,7 +40,7 @@
                 android:id="@+id/promptView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/card"
+                android:background="@drawable/prompt_card"
                 android:gravity="center"
                 android:padding="16dp"
                 android:text=""

@@ -10,30 +10,60 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/mascot_ring">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Conjugaison FR"
+                android:src="@mipmap/ic_launcher_round" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:text="Conjugaison"
+            android:textColor="@color/deep"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Niveau"
-            android:textColor="#5F6368"
+            android:textColor="@color/ink_soft"
             android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <Button android:id="@+id/lvl1" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:textAllCaps="false"
+            <Button android:id="@+id/lvl1" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp"
                 android:textSize="13sp" android:text="Niveau 1" />
-            <Button android:id="@+id/lvl2" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:textAllCaps="false"
+            <Button android:id="@+id/lvl2" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp"
                 android:textSize="13sp" android:text="Niveau 2" />
-            <Button android:id="@+id/lvl3" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:textAllCaps="false"
+            <Button android:id="@+id/lvl3" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp"
                 android:textSize="13sp" android:text="Niveau 3" />
-            <Button android:id="@+id/lvl4" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:textAllCaps="false"
+            <Button android:id="@+id/lvl4" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:textSize="13sp" android:text="Niveau 4" />
         </LinearLayout>
 
@@ -49,35 +79,35 @@
 
         <Button
             android:id="@+id/mode1Btn"
+            style="@style/Widget.Conj.Button.M1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:paddingTop="18dp"
             android:paddingBottom="18dp"
             android:text="✍️  Conjugue"
-            android:textAllCaps="false"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/mode2Btn"
+            style="@style/Widget.Conj.Button.M2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:paddingTop="18dp"
             android:paddingBottom="18dp"
             android:text="📝  En contexte"
-            android:textAllCaps="false"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/mode3Btn"
+            style="@style/Widget.Conj.Button.M3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:paddingTop="18dp"
             android:paddingBottom="18dp"
             android:text="🎯  Choix multiple"
-            android:textAllCaps="false"
             android:textSize="18sp" />
 
         <View
@@ -85,15 +115,15 @@
             android:layout_height="1dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="14dp"
-            android:background="#DDDDDD" />
+            android:background="@color/divider" />
 
         <Button
             android:id="@+id/verbsBtn"
+            style="@style/Widget.Conj.Button.Pale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#EEF2F7"
-            android:textColor="#4527A0"
-            android:textAllCaps="false"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             android:text="📚  Choisir les verbes" />
 
         <TextView

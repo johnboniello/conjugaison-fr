@@ -21,34 +21,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <Button android:id="@+id/pickAll" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
-                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Tout" />
-            <Button android:id="@+id/pickNone" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
-                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Rien" />
-            <Button android:id="@+id/pickCore" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:backgroundTint="#EDE7F6"
-                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="De base" />
+            <Button android:id="@+id/pickAll" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:textSize="12sp" android:text="Tout" />
+            <Button android:id="@+id/pickNone" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:textSize="12sp" android:text="Rien" />
+            <Button android:id="@+id/pickCore" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:textSize="12sp" android:text="De base" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="6dp"
+            android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <Button android:id="@+id/pickG1" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
-                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Groupe 1" />
-            <Button android:id="@+id/pickG2" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:layout_marginEnd="4dp" android:backgroundTint="#EDE7F6"
-                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Groupe 2" />
-            <Button android:id="@+id/pickG3" android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:backgroundTint="#EDE7F6"
-                android:textColor="#4527A0" android:textAllCaps="false" android:textSize="12sp" android:text="Groupe 3" />
+            <Button android:id="@+id/pickG1" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:textSize="12sp" android:text="Groupe 1" />
+            <Button android:id="@+id/pickG2" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:textSize="12sp" android:text="Groupe 2" />
+            <Button android:id="@+id/pickG3" style="@style/Widget.Conj.Button.Pale"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:textSize="12sp" android:text="Groupe 3" />
         </LinearLayout>
 
         <TextView

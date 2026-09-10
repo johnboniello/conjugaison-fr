@@ -1,5 +1,36 @@
 <resources>
+    <!-- Violet-anchored take on the Dictée FR refresh: same soft, rounded style,
+         kept purple so the two apps stay tellable apart. -->
+
+    <color name="violet">#5E35B1</color>
+    <color name="violet_dark">#4527A0</color>
+    <color name="deep">#34176B</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="bg_app">#F3EFFB</color>
+    <color name="ink">#1A1A1A</color>
+    <color name="ink_soft">#5F6368</color>
+    <color name="divider">#DED2F0</color>
+
+    <!-- 3 home mode buttons (cool, violet neighbourhood, distinct) -->
+    <color name="m1">#D9C9F2</color>
+    <color name="m1_on">#34176B</color>
+    <color name="m2">#C9D2F2</color>
+    <color name="m2_on">#23306B</color>
+    <color name="m3">#F0C8E2</color>
+    <color name="m3_on">#6A1550</color>
+
+    <!-- pale utility (levels, keyboard, verb tools) -->
+    <color name="pale">#EDE7F6</color>
+    <color name="pale_stroke">#C6B3E8</color>
+    <color name="pale_on">#4527A0</color>
+
+    <!-- surfaces -->
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_stroke">#D8CCEF</color>
+    <color name="prompt_bg">#F5F0FC</color>
+
+    <!-- legacy aliases -->
     <color name="purple">#5E35B1</color>
     <color name="purple_dark">#4527A0</color>
-    <color name="white">#FFFFFF</color>
 </resources>
