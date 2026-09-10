@@ -68,6 +68,18 @@ apprendre reprendre entreprendre surprendre
 tenir obtenir retenir soutenir maintenir contenir appartenir
 sortir servir mentir partir dormir sentir
 falloir pleuvoir
+
+fermer entendre vendre pleurer sauter crier allumer tuer casser tirer pousser
+toucher tourner baisser attraper poser ajouter enlever prêter emprunter coûter
+dessiner couper coller peser verser vider mélanger goûter préparer laver réparer
+fabriquer créer imaginer rêver adorer détester refuser accepter proposer présenter
+remercier déranger ennuyer gronder quitter rencontrer retrouver accompagner emmener
+amener apporter emporter ramener transporter voler rouler traverser grimper glisser
+respirer souffler siffler téléphoner annoncer répéter décrire prévenir défendre
+protéger sauver soigner guérir blesser frapper mordre piquer embrasser attacher
+sonner déménager démolir planter arroser cueillir chasser nourrir promener exister
+durer manquer valoir échouer remarquer vérifier terminer recommencer couvrir
+découvrir apercevoir rompre vaincre oser fonctionner neiger
 """.split()
 
 IMPERSONAL = {"falloir", "pleuvoir", "neiger"}
